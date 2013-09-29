@@ -1,6 +1,7 @@
 class JeansController < ApplicationController
 
 	def index
+		@test = params[:test]
 		@jeans = Jean.all
 	end
 
