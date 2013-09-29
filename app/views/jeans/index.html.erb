@@ -1,0 +1,14 @@
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Waist</th>
+	</tr>
+
+	<% @jeans.each do |jean| %>
+		<tr>
+			<td><%= jean.name %></td>
+			<td><%= jean.waist %></td>
+		</tr>
+	<% end %>	
+
+</table>
