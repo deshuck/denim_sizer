@@ -11,13 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130929024315) do
+ActiveRecord::Schema.define(version: 20130929171603) do
 
   create_table "jeans", force: true do |t|
     t.string   "name"
     t.float    "waist"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.float    "front_rise"
+    t.float    "thigh"
+    t.float    "knee"
+    t.float    "leg_opening"
+    t.string   "price"
+    t.string   "color"
+    t.string   "brand"
+    t.string   "link"
   end
 
 end

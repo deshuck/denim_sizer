@@ -1,11 +1,27 @@
-<h1>New</h1>
+<h1>Enter a new Jean into the database</h1>
 
 <%= form_for @jean, url: {action: "create"} do |f| %>
 
 	<%= f.text_field :name, placeholder: "Name" %>
-
-	<%= f.text_field :waist, placeholder: "waist" %>
-	
+	<br>
+	<%= f.text_field :brand, placeholder: "Brand" %>
+	<br>
+	<%= f.text_field :waist, placeholder: "Waist" %>
+	<br>
+	<%= f.text_field :front_rise, placeholder: "Front Rise" %>
+	<br>
+	<%= f.text_field :thigh, placeholder: "Thigh" %>
+	<br>
+	<%= f.text_field :knee, placeholder: "Knee" %>
+	<br>
+	<%= f.text_field :leg_opening, placeholder: "Leg Opening" %>
+	<br>
+	<%= f.text_field :price, placeholder: "Price" %>
+	<br>
+	<%= f.text_field :color, placeholder: "Color" %>
+	<br>
+	<%= f.text_field :link, placeholder: "Link" %>
+	<br>
 	<%= f.submit "Save Jean" %>
 
 <% end %>

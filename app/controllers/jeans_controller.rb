@@ -33,7 +33,10 @@ class JeansController < ApplicationController
 	end
 
 	def jean_params
-		params.require(:jean).permit(:name, :waist)
+		params.require(:jean).permit(:name, :waist, 
+							:front_rise, :thigh, :knee,
+							:leg_opening, :price, :color,
+							:brand, :link)
 	end
 
 end

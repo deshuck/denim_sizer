@@ -1,13 +1,31 @@
 <table>
 	<tr>
 		<th>Name</th>
+		<th>Brand</th>
 		<th>Waist</th>
+		<th>Front Rise</th>
+		<th>Thigh</th>
+		<th>Knee</th>
+		<th>Leg Opening</th>
+		<th>Price</th>
+		<th>Color</th>
+		<th>Link</th>
+
+
 	</tr>
 
 	<% @jeans.each do |jean| %>
 		<tr>
 			<td><%= jean.name %></td>
+			<td><%= jean.brand %></td>
 			<td><%= jean.waist %></td>
+			<td><%= jean.front_rise %></td>
+			<td><%= jean.thigh %></td>
+			<td><%= jean.knee %></td>
+			<td><%= jean.leg_opening %></td>
+			<td><%= jean.price %></td>
+			<td><%= jean.color %></td>
+			<td><%= jean.link %></td>
 		</tr>
 	<% end %>	
 
