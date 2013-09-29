@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130929171603) do
+ActiveRecord::Schema.define(version: 20130929181104) do
 
   create_table "jeans", force: true do |t|
     t.string   "name"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 20130929171603) do
     t.string   "color"
     t.string   "brand"
     t.string   "link"
+    t.float    "denim_weight"
+    t.boolean  "sanforized"
   end
 
 end

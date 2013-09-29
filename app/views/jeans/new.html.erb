@@ -2,7 +2,7 @@
 
 <%= form_for @jean, url: {action: "create"} do |f| %>
 
-	<%= f.text_field :name, placeholder: "Name" %>
+	<%= f.text_field :name, placeholder: "Model" %>
 	<br>
 	<%= f.text_field :brand, placeholder: "Brand" %>
 	<br>
@@ -16,9 +16,13 @@
 	<br>
 	<%= f.text_field :leg_opening, placeholder: "Leg Opening" %>
 	<br>
-	<%= f.text_field :price, placeholder: "Price" %>
+	<%= f.text_field :denim_weight, placeholder: "Weight" %>
+	<br>
+	<%= f.check_box :sanforized %> The Jean is Sanforized
 	<br>
 	<%= f.text_field :color, placeholder: "Color" %>
+	<br>
+	<%= f.text_field :price, placeholder: "Price" %>
 	<br>
 	<%= f.text_field :link, placeholder: "Link" %>
 	<br>

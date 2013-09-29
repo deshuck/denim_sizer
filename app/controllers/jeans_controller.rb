@@ -36,7 +36,8 @@ class JeansController < ApplicationController
 		params.require(:jean).permit(:name, :waist, 
 							:front_rise, :thigh, :knee,
 							:leg_opening, :price, :color,
-							:brand, :link)
+							:brand, :link, :denim_weight,
+							:sanforized)
 	end
 
 end
